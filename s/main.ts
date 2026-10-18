@@ -100,7 +100,7 @@ const VideoEditor =  (omnislate: Nexus<OmniContext>) => omnislate.light_view((us
 			${ExportInProgressOverlay([])}
 			<div class=editor-header>
 				<div class=flex>
-					<img class="logo" src="/assets/icon3.png" />
+					<img class="logo" src="assets/icon3.png" />
 					<div class="project-name">
 						<span class="box">
 							<input class="input-name" ?disabled=${renameDisabled} .value=${use.context.state.projectName}>

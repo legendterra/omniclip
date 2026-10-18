@@ -55,6 +55,9 @@ jobs:
         cp -r node_modules/ x/
         cp -r s/ x/
 
+    - name: 🗺️ import map under /omniclip/ (served from a sub-folder)
+      run: npx --yes importly@0.2.3 --host=node_modules --root=/omniclip/ < package-lock.json > x/importmap.json
+
     - name: 📝 configure pages
       uses: actions/configure-pages@v2
 

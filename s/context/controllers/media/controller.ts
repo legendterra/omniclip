@@ -14,7 +14,7 @@ export function makeReadChunk(file: File): ReadChunkFunc {
 // its best to create new instance of mediainfo every time its used
 export async function getMediaInfo() {
 	return await new mediaInfoFactory({
-		locateFile: () => `${window.location.origin}/assets/MediaInfoModule.wasm` // Path to the wasm file
+		locateFile: () => `${new URL("assets/", document.baseURI).href}MediaInfoModule.wasm` // Path to the wasm file
 	})
 }
 

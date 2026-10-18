@@ -125,11 +125,11 @@ export class LandingPage extends LitElement {
 	render() {return html`
 		<div class="landing-page">
 			<nav>
-				<img class="logo" src="/assets/icon3.png" />
+				<img class="logo" src="assets/icon3.png" />
 				<img @click=${() => {
 					this.menuOpened = !this.menuOpened
 					this.requestUpdate()
-				}} class="menu-icon" src="/assets/hamburger.svg">
+				}} class="menu-icon" src="assets/hamburger.svg">
 				<div class="menu" ?data-opened=${this.menuOpened}>
 					<a @click=${() => this.scrollIntoElementView("welcome")} href="#welcome">Home</a>
 					<a @click=${() => this.scrollIntoElementView("capabilities")} href="#capabilities">Features</a>
@@ -181,23 +181,23 @@ export class LandingPage extends LitElement {
 					<h4>All the basic stuff, you can add audio/image/text/video and trim or split it, but there's more!</h4>
 					<div class="flex">
 						<div class="item">
-							<img src="/assets/trim.svg" />
+							<img src="assets/trim.svg" />
 							<p>Trim</p>
 						</div>
 						<div class="item">
-							<img src="/assets/split.svg" />
+							<img src="assets/split.svg" />
 							<p>Split</p>
 						</div>
 						<div class="item">
-							<img src="/assets/text.svg" />
+							<img src="assets/text.svg" />
 							<p>Text</p>
 						</div>
 						<div class="item">
-							<img src="/assets/images.svg" />
+							<img src="assets/images.svg" />
 							<p>Images</p>
 						</div>
 						<div class="item">
-							<img src="/assets/audio.svg" />
+							<img src="assets/audio.svg" />
 							<p>Audio</p>
 						</div>
 					</div>
@@ -208,14 +208,14 @@ export class LandingPage extends LitElement {
 								<p>7 animations to play with<br>
 								but there's more to come!</p>
 								<video autoplay loop muted width="250">
-									<source src="/assets/animation.mp4" type="video/mp4" />
+									<source src="assets/animation.mp4" type="video/mp4" />
 								</video>
 							</div>
 							<div class="item-more">
 								<h3>Filters</h3>
 								<p>As much as 30+ filters!<br> you can mix and match them too.</p>
 								<video autoplay loop muted width="250">
-									<source src="/assets/filters.mp4" type="video/mp4" />
+									<source src="assets/filters.mp4" type="video/mp4" />
 								</video>
 							</div>
 						</div>
@@ -225,7 +225,7 @@ export class LandingPage extends LitElement {
 								<p>Adjustable panels<br>customize workspace the way you want<br>
 								</p>
 								<video autoplay loop muted width="250">
-									<source src="/assets/resizable.mp4" type="video/mp4" />
+									<source src="assets/resizable.mp4" type="video/mp4" />
 								</video>
 							</div>
 							<div class="item-more">
@@ -233,7 +233,7 @@ export class LandingPage extends LitElement {
 								<p>Auto-loading fonts from<br> your device for seamless typography.<br>
 								</p>
 								<video autoplay loop muted width="250">
-									<source src="/assets/localfonts.mp4" type="video/mp4" />
+									<source src="assets/localfonts.mp4" type="video/mp4" />
 								</video>
 							</div>
 						</div>
@@ -257,7 +257,7 @@ export class LandingPage extends LitElement {
 							</ul>
 						</div>
 						<video autoplay loop muted width="250">
-							<source src="/assets/export4k.mp4" type="video/mp4" />
+							<source src="assets/export4k.mp4" type="video/mp4" />
 						</video>
 					</div>
 				</div>
@@ -371,7 +371,7 @@ export class LandingPage extends LitElement {
 					<div class="transitions-demo">
 						<div class="video-container">
 							<video class="transitions-video" autoplay loop muted>
-								<source src="/assets/transitions.mp4" type="video/mp4" />
+								<source src="assets/transitions.mp4" type="video/mp4" />
 							</video>
 							<div class="transition-counter">
 								<span class="current-transition">Transition: <strong>${this.currentTransition}</strong></span>
@@ -388,7 +388,7 @@ export class LandingPage extends LitElement {
 										class="transition-thumbnail ${this.currentTransition === transition ? "active" : ""}"
 										data-index=${i} data-name=${transition}
 									>
-										<img src="/assets/transitions/output_${paddedIndex}.gif"/>
+										<img src="assets/transitions/output_${paddedIndex}.gif"/>
 									</div>
 								`})}
 							<div class="transition-thumbnail more-transitions" @click=${this.toggleTransitionsDropdown}>
@@ -404,7 +404,7 @@ export class LandingPage extends LitElement {
 													class="transition-thumbnail ${this.currentTransition === transition ? "active" : ""}"
 													data-index=${i + 5} data-name=${transition}
 												>
-													<img src="/assets/transitions/output_${paddedIndex}.gif"/>
+													<img src="assets/transitions/output_${paddedIndex}.gif"/>
 												</div>
 											`})}
 									</div>
@@ -431,7 +431,7 @@ export class LandingPage extends LitElement {
 								Yep, it's open source! See how it's built, tweak it,
 								or pitch in, all with the freedom of an MIT license.
 							</p>
-							<img src="/assets/opens.png" />
+							<img src="assets/opens.png" />
 						</div>
 						<div class="item free">
 							<h3>Free</h3>
@@ -651,7 +651,7 @@ $ omnitool batch-render ./projects/* --output-dir ./exports
 			<!-- Footer -->
 			<footer>
 				<div class="footer-logo-background">
-					<img src="/assets/icon3.png" alt="Omniclip" />
+					<img src="assets/icon3.png" alt="Omniclip" />
 				</div>
 				
 				<div class="footer-content">

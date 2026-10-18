@@ -92,7 +92,7 @@ export class Filmstrip {
 	#generate_filmstrip_placeholders(frames: number) {
 		const new_arr = []
 		for(let i = 0; i <= frames - 1; i++) {
-			new_arr.push(`${window.location.origin}/assets/loading.svg`)
+			new_arr.push(`${new URL("assets/", document.baseURI).href}loading.svg`)
 		}
 		return new_arr
 	}
@@ -160,7 +160,7 @@ export class Filmstrip {
 				const position = normalized_left + this.#width_of_frame * i
 				if(position <= this.effect_width) {
 					const filmstrip = this.#filmstrip_frames[this.#get_filmstrip_frame_at(effect, position, zoom)]
-					const filmstrip_is_already_drawn = filmstrip !== `${window.location.origin}/assets/loading.svg` && filmstrip
+					const filmstrip_is_already_drawn = filmstrip !== `${new URL("assets/", document.baseURI).href}loading.svg` && filmstrip
 					if(filmstrip_is_already_drawn) {
 						yield {url: filmstrip, normalized_left, i: Math.floor(i)}
 					} else {

@@ -95,7 +95,7 @@ export const OmniTransitions = shadow_component(use => {
 	
 	const tutorialVideo = use.once(() => {
 		const video = document.createElement("video")
-		video.src = "/assets/transition-tutorial.mp4"
+		video.src = "assets/transition-tutorial.mp4"
 		video.loop = true
 		return video
 	})

@@ -79,7 +79,7 @@
 // 					<p>
 // 						To enable local fonts, go to browser settings > site permissions, and allow fonts for this site.
 // 					</p>
-// 					<img src="/assets/fontinfo.png" />
+// 					<img src="assets/fontinfo.png" />
 // 					<i></i>
 // 				</div>
 // 			</div>

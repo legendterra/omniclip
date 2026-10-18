@@ -120,7 +120,7 @@ export class FiltersManager {
 	}
 
 	async createFilterPreviews(onCreatedPreview: ({canvas, type, uid}: {canvas: PIXI.ICanvas, type: FilterType, uid: number}) => void) {
-		const webp = await fetch("/assets/filter-preview.webp")
+		const webp = await fetch("assets/filter-preview.webp")
 		for(const schema in FilterSchemas) {
 			const texture = await PIXI.Assets.load({src: webp.url, format: webp.type, loadParser: 'loadTextures'})
 			const image = new PIXI.Sprite(texture)
